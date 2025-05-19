@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xylem Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Xylem Finder</h1>
+  </header>
+
+  <!-- Recent Missing People -->
+  <section id="recent-missing">
+    <h2>Recent Missing People in Bangladesh</h2>
+    <div id="people-grid"></div>
+  </section>
+
+  <!-- Chart Section -->
+  <section id="map-chart">
+    <h2>Distribution of Missing People by Location</h2>
+    <img id="location-chart" src="" alt="Chart will appear here"/>
+  </section>
+
+  <!-- Chatbot -->
+  <section id="chatbot">
+    <h2>Find Your Own Missing Person or Ask About Someone</h2>
+    <div id="chat-box" style="border:1px solid #ccc; height:300px; overflow-y:auto; padding:10px; background:#fff; margin-bottom:10px;">
+      <!-- Messages will appear here -->
+    </div>
+    <input type="text" id="chat-input" placeholder="Type your question..." style="width:80%; padding:10px;" />
+    <button onclick="sendMessage()" style="padding:10px;">Send</button>
+  </section>
+
+  <!-- Report Form -->
+  <section id="report-form">
+    <h2>Report a Missing Person</h2>
+    <form id="missing-form">
+      <input type="text" id="name" placeholder="Name" required/>
+      <input type="date" id="date_missing" required/>
+      <input type="text" id="location" placeholder="Location" required/>
+      <input type="text" id="zip_or_coord" placeholder="Zip Code or Coordinates" required/>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <ul>
+      <li><a href="#">How to Use This Website</a></li>
+      <li><a href="#">Video Demonstration</a></li>
+      <li><a href="#">Research Paper</a></li>
+    </ul>
+    <p>Developed by Jawad Zaman</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
